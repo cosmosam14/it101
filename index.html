@@ -12,10 +12,12 @@
             display: flex;
         }
         #sidebar {
+            display:flex;
             border-right: 3px dotted black;
             height: 500px;
             margin: 50px;
             padding-right: 50px;
+            flex-direction: column;
         }
         #header {
             display: flex;
@@ -26,6 +28,11 @@
         }
         #header h1 {
             font-size: 60px;
+            
+        }
+        #header a {
+            text-decoration: none;
+            color: inherit;
         }
         #header img {
             height: 250px;
@@ -52,13 +59,14 @@
 <body>
     <div id="header">
         <img src="https://i.pinimg.com/originals/f1/5d/4c/f15d4ceee761a08b2f6aa557d48ff8e5.gif">
-        <h1>My First Webpage</h1>
+        <a href="index.html"><h1>My First Webpage</h1></a>
         <img src="https://i.pinimg.com/originals/d4/9b/b1/d49bb1b75758d298d2e80a91d475fcf5.gif">
     </div>
     <div id ="notHeader">
         <div id ="sideContent">
             <div id ="sidebar">
                 <a href="https://www.w3schools.com/">This is a very helpful link!</a>
+                <a href="badsite.html">Example of a bad website</a>
             </div>
 
         <div id = "content">
